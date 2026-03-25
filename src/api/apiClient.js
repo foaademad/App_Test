@@ -1,25 +1,6 @@
 import axios from "axios";
 
-const normalizeBaseUrl = (value) => {
-  if (!value) {
-    return "";
-  }
-  const trimmed = String(value).trim();
-  if (!trimmed) {
-    return "";
-  }
-  try {
-    const parsed = new URL(trimmed);
-    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
-      return "";
-    }
-    return trimmed.replace(/\/+$/, "");
-  } catch {
-    return "";
-  }
-};
-
-const baseURL = normalizeBaseUrl("https://42a9-41-233-241-157.ngrok-free.app");
+const baseURL = "https://test.carlink.market";
 const requireBackendEnv = String(process.env.EXPO_PUBLIC_REQUIRE_BACKEND || "").toLowerCase();
 
 export const isApiConfigured = Boolean(baseURL);
