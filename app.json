@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Daily Counter",
+    "slug": "daily-counter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dailycounter.app"
+    },
+    "android": {
+      "package": "com.dailycounter.app"
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
